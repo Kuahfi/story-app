@@ -6,10 +6,10 @@
     <title>Dicoding Story App</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="css/styles.css">
-</head>
+    </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <div class="container">
         <header role="banner">
             <h1>Dicoding Story App</h1>
@@ -17,31 +17,26 @@
         </header>
 
         <nav role="navigation">
-            <button class="nav-btn active" onclick="navigateTo('home')" id="home-btn">
+            <button class="nav-btn active" onclick="appController.navigateTo('home')" id="home-btn">
                 🏠 Beranda
             </button>
-            <button class="nav-btn" onclick="navigateTo('add-story')" id="add-story-btn">
+            <button class="nav-btn" onclick="appController.navigateTo('add-story')" id="add-story-btn">
                 ➕ Tambah Story
             </button>
-            <button class="nav-btn" onclick="navigateTo('login')" id="login-btn">
+            <button class="nav-btn" onclick="appController.navigateTo('login')" id="login-btn">
                 🔐 Login
             </button>
         </nav>
 
         <main id="main-content" role="main">
-            <!-- Content will be loaded dynamically -->
-        </main>
+            </main>
     </div>
 
-    <!-- External Libraries -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
-    <!-- App Scripts -->
-    <script src="js/utils.js"></script>
-    <script src="js/state.js"></script>
-    <script src="js/api.js"></script>
+    <script src="js/app-state.js"></script>
+    <script src="js/api-service.js"></script>
     <script src="js/views.js"></script>
-    <script src="js/controller.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app-controller.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
